@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Gotham,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+}
+header{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a2611;
+    color: white;
+    margin: 0;
+    padding-right: 70px;
+    padding-left: 70px;
+    top: 0px;
+}
+.menu{
+    align-content: flex-end;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    margin-top: 45px;
+    font-size: 20px;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a:visited , .menu li a:link , .menu li a:active {
+    text-decoration: none;
+    color: white;
+    transition: ease 0.5s color;
+}
+.menu li a:hover{
+    color: #6C8C77;
+}
+.title{
+    font-size: 40px;
+    vertical-align: middle;
+    letter-spacing: 25px;
+}
+.cover{
+    padding-top: 300px;
+    padding-bottom: 300px ;
+    background-size: 100% 100%; 
+    background : linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%),url(../ASSETS/Artboard\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.latest{
+    color: #2D7345;
+    font-size: 60px;
+    text-align: center;
+    margin: 70px;
+}
+.videos iframe{
+    border-radius: 25px;
+    width: 300px;
+    height: 180px;
+}
+.videos{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.channel{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+.channel a:visited , .channel a:link , .channel a:active {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    background-color: #0a2611;
+    border-radius: 35px;
+    padding: 20px;
+    vertical-align: middle;
+    transition: ease 0.5s color , ease 0.5s background-color , ease 0.5s box-shadow , ease 0.5s font-weight;
+}
+.channel  a:hover{
+    color: #0A2611;
+    font-weight: 600;
+    background-color: #225935;
+    box-shadow : 0 0 20px #0a2611;
+}
+hr{
+    margin-top: 40px;
+    width: 70%;
+    border-color: #6C8C77;
+}
+footer{
+    background-color: #0A2611;
+    padding: 70px;
+}
+#contact{
+    color: black;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.email{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+}
+.email a:visited , .email a:link , .email a:active {
+    text-decoration: none;
+    color: white;
+    width: 50%;
+    background-color: black;
+    border-radius: 35px;
+    padding: 20px;
+    vertical-align: middle;
+    transition: ease 0.5s color , ease 0.5s background-color , ease 0.5s font-weight;
+}
+.email a:hover{
+    color: #0A2611;
+    font-weight: 600;
+    background-color: white;
+}
+.icon{
+    height: 50px;
+    width : 50px ;
+}
+.svg{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+.svg a:link , .svg a:visited , .svg a:active {
+    fill: black;
+    transition: transform 0.5s , ease 0.5s fill;
+}
+.svg a:hover{
+    transform: scale(1.05);
+    fill: white;
+}
+@media screen and (max-width : 1100px){
+    .title{
+        font-size: 30px;
+        letter-spacing: 10px;
+        width: auto;
+    }
+    .menu{
+        margin-top: 15px;
+        font-size: 15px;
+        justify-content: space-around;
+        width: auto;
+    }
+    .menu li{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .videos{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .videos iframe{
+        margin-bottom: 60px;
+    }
+    .channel{
+        width: auto;
+        align-items: center;
+    }
+    .svg .icon {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+.social div{
+    margin: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.social div a:link , .social div a:active , .social div a:visited{
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    width: 100%;
+    background-color: #0a2611;
+    border-radius: 35px;
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: ease 0.5s color , ease 0.5s background-color , ease 0.5s font-weight ;
+}
+.social .youtube:hover{
+    background-color: #FF0000;
+    font-weight: 600;
+}
+.social .facebook:hover{
+    background-color: #3b5998;
+    font-weight: 600;
+}
+.social .instagram:hover{
+    background-color: #DD2A7B;
+    font-weight: 600;
+}
+.social .twitter:hover{
+    background-color: #00acee;
+    font-weight: 600;
+}
+.social .soundcloud:hover{
+    background-color: #FF7700;
+    font-weight: 600;
+}
+.social .spinnin:hover{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+.social .spotify:hover{
+    background-color: #81b71a;
+    font-weight: 600;
+}
+.social .itunes:hover{
+    color: #CC45F2;
+    background-color: white;
+    font-weight: 600;
+}
+@media screen and (max-width : 1100px){
+    .social div{
+        flex-direction: column;
+        margin: 0;
+    }
+    .social div a {
+        margin: 40px;
+    }
+}
